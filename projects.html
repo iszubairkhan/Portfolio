@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Archive | Zubair Khan</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">&lt; zubair.dev/ &gt;</a>
+      <nav class="nav-links">
+        <a href="index.html">&larr; Back to Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container archive-container">
+    <h1 class="archive-title">&gt; system.directory --all-projects</h1>
+    <p class="archive-subtitle">Complete log of repositories, web applications, and security tools.</p>
+
+    <div class="table-responsive">
+      <table class="archive-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Project</th>
+            <th>Category</th>
+            <th>Tech Stack</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-year">2026</td>
+            <td class="col-title">SOC Email Threat Analyzer</td>
+            <td class="col-cat">Security / SIH</td>
+            <td class="col-tech">Python, NLP, Forensic Hashing</td>
+            <td class="col-links"><span class="status-pill wip"><span class="pulse-dot yellow"></span> WIP</span></td>
+          </tr>
+          <tr>
+            <td class="col-year">2025</td>
+            <td class="col-title">GafferGrid</td>
+            <td class="col-cat">Web Application</td>
+            <td class="col-tech">JavaScript, CSS Grid</td>
+            <td class="col-links"><a href="https://github.com/iszubairkhan/GafferGrid" target="_blank">Code</a> · <a href="https://iszubairkhan.github.io/GafferGrid/" target="_blank">Demo</a></td>
+          </tr>
+          <tr>
+            <td class="col-year">2025</td>
+            <td class="col-title">Roshambo Game</td>
+            <td class="col-cat">Interactive JS</td>
+            <td class="col-tech">JavaScript, CSS3</td>
+            <td class="col-links"><a href="https://github.com/iszubairkhan/Roshambo.game" target="_blank">Code</a> · <a href="https://iszubairkhan.github.io/Roshambo.game/" target="_blank">Demo</a></td>
+          </tr>
+          <tr>
+            <td class="col-year">2024</td>
+            <td class="col-title">Drum-Kit Audio Engine</td>
+            <td class="col-cat">Web Audio</td>
+            <td class="col-tech">JavaScript, Keyboard Listeners</td>
+            <td class="col-links"><a href="https://github.com/iszubairkhan/Drum-kit" target="_blank">Code</a> · <a href="https://iszubairkhan.github.io/Drum-kit/" target="_blank">Demo</a></td>
+          </tr>
+          <tr>
+            <td class="col-year">2024</td>
+            <td class="col-title">Diceee Simulator</td>
+            <td class="col-cat">Mini Tool</td>
+            <td class="col-tech">JavaScript, Math API</td>
+            <td class="col-links"><a href="https://github.com/iszubairkhan/diceee" target="_blank">Code</a> · <a href="https://iszubairkhan.github.io/diceee/" target="_blank">Demo</a></td>
+          </tr>
+          <tr>
+            <td class="col-year">2024</td>
+            <td class="col-title">TinDog Landing Page</td>
+            <td class="col-cat">Frontend UI</td>
+            <td class="col-tech">HTML5, Bootstrap / CSS</td>
+            <td class="col-links"><a href="https://github.com/iszubairkhan/Tin-dog" target="_blank">Code</a> · <a href="https://iszubairkhan.github.io/Tin-dog/" target="_blank">Demo</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="copyright">&copy; <span id="year"></span> Mohammad Zubair Khan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

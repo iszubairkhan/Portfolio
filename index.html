@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Zubair Khan</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">&lt; zubair.dev/ &gt;</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero / Terminal Section -->
+    <section class="hero-section">
+      <div class="terminal-box">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-user">root@zubair-sec:~</span>
+        </div>
+        <div class="terminal-content">
+          <p><span class="cmd">$</span> whoami</p>
+          <p class="output">&gt; Mohammad Zubair Khan [Security Enthusiast &amp; Developer]</p>
+          <p><span class="cmd">$</span> cat skills.json | jq .focus</p>
+          <p class="output">&gt; ["Python Automation", "Full-Stack Web", "Network Security", "Vulnerability Research"]</p>
+          <p><span class="cmd">$</span> status --current</p>
+          <p class="output">&gt; Active: Building tools, analyzing protocols &amp; writing code.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="hud-card">
+        <div class="hud-header">
+          <span class="hud-tag">AboutMe</span>
+          <span class="hud-status">STATUS: ONLINE</span>
+        </div>
+        <p class="hud-lead">Began programming at <strong>13</strong> with an obsession for understanding how software behaves under the surface.</p>
+        <div class="hud-divider"></div>
+        <p class="hud-sub">Currently dedicated to offensive and defensive cybersecurity research, threat analysis, and Python security tooling—backed by a solid foundation in building full-stack web applications.</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <h2 class="section-title">&gt; Technical Arsenal</h2>
+      <div class="skills-grid">
+          <div class="skill-card">
+          <div class="skill-icon">🛡️</div>
+          <h3>Cybersecurity &amp; Systems</h3>
+          <p>Exploring network defense, penetration testing concepts, and secure code architecture.</p>
+          <div class="tags">
+            <span>Linux / Bash</span>
+            <span>Network Analysis</span>
+            <span>Vulnerability Testing</span>
+            <span>Security Scripting</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Software &amp; Web Development</h3>
+          <p>Designing modern, responsive interfaces and reliable backends.</p>
+          <div class="tags">
+            <span>HTML5 / CSS3</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <!-- Dropdown 1: Security Research -->
+      <details class="project-dropdown" open>
+        <summary class="dropdown-header">
+          <span class="dropdown-title">&gt; Featured Security Research</span>
+          <span class="dropdown-icon">▼</span>
+        </summary>
+        <div class="dropdown-content">
+          <div class="project-header">
+            <div>
+              <h3 class="project-title">SOC Email Threat Analyzer</h3>
+              <span class="project-meta">SIH Project (Problem Statement #106)</span>
+            </div>
+            <span class="project-tag">Security Engine</span>
+          </div>
+          <p class="project-desc">An automated cybersecurity engine built to trace spoofed email origins, analyze MTA relay hops, verify SPF/DMARC alignment, and generate real-time SOC forensic reports with court-admissible SHA-256 evidence hashing.</p>
+          <div class="tags">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>NLP / AI</span>
+            <span>MTA Forensics</span>
+            <span>SHA-256 Hashing</span>
+          </div>
+          <div class="project-footer">
+            <span class="status-pill wip"><span class="pulse-dot yellow"></span> In Active Development (SIH PS 106)</span>
+          </div>
+        </div>
+      </details>
+
+      <!-- Dropdown 2: Web Apps -->
+      <details class="project-dropdown">
+        <summary class="dropdown-header">
+          <span class="dropdown-title">&gt; Featured Web Apps (3)</span>
+          <span class="dropdown-icon">▼</span>
+        </summary>
+        <div class="dropdown-content">
+          <div class="web-projects-grid">
+            
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">GafferGrid</h3>
+                <span class="project-tag">Web App</span>
+              </div>
+              <p class="project-desc">A custom CSS Grid and responsive UI layout utility designed for dynamic content structuring and fluid alignment.</p>
+              <div class="tags">
+                <span>JavaScript</span>
+                <span>CSS Grid</span>
+                <span>DOM API</span>
+              </div>
+              <div class="project-footer dual">
+                <a href="https://github.com/iszubairkhan/GafferGrid" target="_blank" rel="noopener noreferrer" class="code-link">&lt;Code /&gt;</a>
+                <a href="https://iszubairkhan.github.io/GafferGrid/" target="_blank" rel="noopener noreferrer" class="demo-link">[Live Demo &nearr;]</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">Roshambo Game</h3>
+                <span class="project-tag">Game</span>
+              </div>
+              <p class="project-desc">Interactive Rock-Paper-Scissors game featuring automated decision logic, animations, and real-time score tracking.</p>
+              <div class="tags">
+                <span>JavaScript</span>
+                <span>DOM Events</span>
+                <span>CSS3</span>
+              </div>
+              <div class="project-footer dual">
+                <a href="https://github.com/iszubairkhan/Roshambo.game" target="_blank" rel="noopener noreferrer" class="code-link">&lt;Code /&gt;</a>
+                <a href="https://iszubairkhan.github.io/Roshambo.game/" target="_blank" rel="noopener noreferrer" class="demo-link">[Live Demo &nearr;]</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-header">
+                <h3 class="project-title">Drum-Kit Audio</h3>
+                <span class="project-tag">Web Audio</span>
+              </div>
+              <p class="project-desc">Responsive web synthesizer mapping keyboard keys and click events to synchronized audio samples with visual triggers.</p>
+              <div class="tags">
+                <span>JavaScript</span>
+                <span>Audio API</span>
+                <span>Listeners</span>
+              </div>
+              <div class="project-footer dual">
+                <a href="https://github.com/iszubairkhan/Drum-kit" target="_blank" rel="noopener noreferrer" class="code-link">&lt;Code /&gt;</a>
+                <a href="https://iszubairkhan.github.io/Drum-kit/" target="_blank" rel="noopener noreferrer" class="demo-link">[Live Demo &nearr;]</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="archive-cta">
+            <a href="projects.html" class="btn btn-secondary">&gt; View Complete Archive (5+ Repos) &rarr;</a>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-card">
+        <h2>Let's Build Something Together</h2>
+        <p>Whether you want to collaborate on a security script, build a web project, or just connect—drop me a message.</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zubairmohammad65089@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Send Email</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-socials">
+      <a href="https://github.com/iszubairkhan" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/mohammad-zubair-khan-9651ab315/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+      </a>
+      <a href="https://www.instagram.com/zxbair_khan" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      </a>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> Mohammad Zubair Khan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
