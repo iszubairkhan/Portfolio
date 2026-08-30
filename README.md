@@ -1,6 +1,6 @@
 # 🚀 Personal Developer Portfolio
 
-A sleek, responsive, and minimalist developer portfolio website showcasing my technical toolkit, featured engineering projects, and contact info. Built with a modern terminal aesthetic and optimized for fast performance and low latency.
+A sleek, responsive, and minimalist developer portfolio website showcasing my technical toolkit, featured projects, and contact info. Built with a modern terminal aesthetic and optimized for fast performance and low latency.
 
 ---
 
