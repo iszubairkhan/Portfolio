@@ -18,12 +18,18 @@
           <img src="zubair.jpg" alt="Zubair Khan" class="nav-avatar">
           <span>&lt; zubair.dev/ &gt;</span>
       </a>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact" class="nav-btn">Contact</a>
-      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+     </button>
+
+    <nav class="nav-links" id="navMenu">
+      <a href="#about" class="nav-item">About</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#contact" class="nav-btn nav-item">Contact</a>
+    </nav>
     </div>
   </header>
 
@@ -219,7 +225,25 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+  const navItems = document.querySelectorAll('.nav-item');
+
+  // Toggle dropdown on button click
+    menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+  // Close menu automatically when any link is clicked
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
   </script>
 </body>
 </html>
