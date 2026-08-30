@@ -498,6 +498,28 @@ body::before {
 .col-links a { color: var(--neon-green); text-decoration: none; font-weight: 600; transition: all 0.2s ease; }
 .col-links a:hover { color: var(--neon-cyan); text-shadow: 0 0 8px rgba(0, 240, 255, 0.6); }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #00ff66; /* matches terminal green accent */
+  box-shadow: 0 0 8px rgba(0, 255, 102, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logo:hover .nav-avatar {
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(0, 255, 102, 0.45);
+}
+
 /* Responsive Media Queries */
 @media (max-width: 900px) {
   .web-projects-grid { grid-template-columns: 1fr; }
