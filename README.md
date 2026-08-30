@@ -14,6 +14,8 @@ A sleek, responsive, and minimalist developer portfolio website showcasing my te
 
 ---
 
+**AI BEING USED IN OPTIMISATION AND DESIGNING 🚀 **
+
 ## 📁 Repository Structure
 
 ```text
